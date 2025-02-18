@@ -1,0 +1,230 @@
+/* style.css */
+ 
+/* Alapbeállítások */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f9f9f9;
+
+    color: #333;
+
+}
+ 
+header {
+
+    background-color: #004080; /* Sötétkék */
+
+    color: #fff;
+
+    padding: 20px;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+ 
+header .row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+ 
+header img {
+
+    border-radius: 8px;
+
+}
+ 
+nav ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    gap: 20px;
+
+}
+ 
+nav ul li a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+
+}
+ 
+nav ul li a:hover {
+
+    color: #ffcc00; /* Sárga */
+
+}
+ 
+main {
+
+    padding: 20px;
+
+    min-height: 400px;
+
+    background-color: #fff;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+
+    max-width: 1200px;
+
+}
+ 
+footer {
+
+    background-color: #004080;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 10px 0;
+
+    font-size: 14px;
+
+    margin-top: 20px;
+
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+
+}
+ 
+footer p {
+
+    margin: 0;
+
+}
+
+/* Kiegészített style.css */
+ 
+/* Nav menü - gombok stílusosítása */
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0066cc; /* Középkék */
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+ 
+nav ul li a:hover {
+    background-color: #ffcc00; /* Sárga */
+    color: #004080; /* Sötétkék */
+    transform: translateY(-3px);
+}
+ 
+/* Main tartalom */
+main {
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #e6f2ff); /* Világoskék átmenet */
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 1200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Kép és logo stílus */
+header img {
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+header img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+ 
+/* Footer */
+footer p {
+    font-size: 14px;
+    font-style: italic;
+    color: #e6e6e6;
+}
+ 
+/* Reszponzív megjelenés mobilon */
+@media (max-width: 768px) {
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+ 
+    main {
+        padding: 20px;
+        margin: 10px auto;
+    }
+}
+
+/* Gyártók táblázat */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+ 
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Halvány szegély */
+}
+ 
+table th {
+    background-color: #004080; /* Sötétkék háttér a fejlécnek */
+    color: #fff; /* Fehér szöveg */
+    text-transform: uppercase;
+}
+ 
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Világosszürke csíkok */
+}
+ 
+table tr:hover {
+    background-color: #ffcc00; /* Sárga kiemelés, ha az egér fölé kerül */
+    color: #004080; /* Sötétkék szöveg */
+    cursor: pointer;
+}
+ 
+/* Reszponzív táblázat kisebb képernyőkhöz */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px; /* Kisebb betűméret mobilon */
+    }
+ 
+    table th,
+    table td {
+        padding: 10px; /* Szorosabb padding mobilon */
+    }
+}
